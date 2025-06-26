@@ -1,5 +1,7 @@
 Feature: Login to saucedemo website
 
+
+
   Scenario Outline: Validate the login is successfull for saucedemo website
     Given the user launch the saucedemo URL
     When the User enter "<username>" and "<password>"
