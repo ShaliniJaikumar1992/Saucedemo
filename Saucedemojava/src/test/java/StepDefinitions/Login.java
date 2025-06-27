@@ -8,15 +8,8 @@ import java.util.Map;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
-import io.cucumber.java.After;
+import Utilities.Hooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -35,12 +28,13 @@ public class Login {
     HomePage homepage;
     CheckoutPage checkoutpage;
     EnterInformationPage enterinformationpage;
+    Hooks hooks;
 
 
 
 	@Given("the user launch the saucedemo URL")
 	public void the_user_launch_the_saucedemo_url() {
-
+	
 		ChromeOptions options = new ChromeOptions();
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("credentials_enable_service", false);
@@ -63,8 +57,11 @@ public class Login {
 
 
 		driver.navigate().to("https://www.saucedemo.com/");
-
-
+		
+		
+		
+		
+		Hooks.test.info("Navigated to Login Page");
 	}
 
 	@When("the User enter {string} and {string}")
@@ -74,6 +71,7 @@ public class Login {
 
 		loginpage.EnterValidCredentials(username, password);
 		 
+		Hooks.test.info("Entered credentials");
 
 	}
 
@@ -85,6 +83,7 @@ public class Login {
 		loginpage.ClickonLoginbutton();		
 		long time = 2000;
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(time));
+		Hooks.test.pass("Clicked login button");
 	}
 
 	@Then("The user should be on home page")
@@ -92,14 +91,14 @@ public class Login {
 		homepage = new HomePage(driver);
 		
 		homepage.GetTitleofpage();
-
+		Hooks.test.pass("Titlepage validated");
 	}
 
 	@Then("user need to add items to the cart")
 	public void user_need_to_add_items_to_the_cart() {
 		
 		homepage.AddItemToCart();
-		
+		Hooks.test.pass("added items to cart");
 	}
 
 	@Then("select the check out option")
@@ -108,7 +107,7 @@ public class Login {
 		checkoutpage = new CheckoutPage(driver);
 		
 		checkoutpage.checkoutItemfromCart();
-		
+		Hooks.test.pass("Click on Cart image");
 	}
 
 	@Then("user enter the information asked {string},{string},{string}")
@@ -116,12 +115,13 @@ public class Login {
 		enterinformationpage = new EnterInformationPage(driver);
 		
 		enterinformationpage.Enterdetails(name,lastname,pincode);
-
+		Hooks.test.pass("Entered all the information");
 	}
 
 	@Then("click on finish button")
 	public void click_on_finish_button() {
 		enterinformationpage.ClickOnFinishbutton();
+		Hooks.test.pass("click on finish button");
 	}
 
 	@Then("verify the {string} message")
@@ -129,7 +129,7 @@ public class Login {
 	public void verify_the_message(String message) {
 		
 		enterinformationpage.verifyThankyoumessage(message); 
-		
+		Hooks.test.pass("Verified Thank you message");
 	}
 	
 	
