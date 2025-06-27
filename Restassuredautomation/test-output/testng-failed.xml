@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Postmethodpositivetest">
+      <class name="tests.RAapiautomation">
         <methods>
-          <include name="Negativetest"/>
+          <include name="testPostApiResponse"/>
         </methods>
-      </class> <!-- tests.Postmethodpositivetest -->
+      </class> <!-- tests.RAapiautomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

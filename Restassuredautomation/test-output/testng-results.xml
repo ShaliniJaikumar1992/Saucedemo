@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-26T17:38:31 IST" name="Default suite" finished-at="2025-06-26T17:38:34 IST" duration-ms="2759">
+  <suite started-at="2025-06-27T08:28:37 IST" name="Default suite" finished-at="2025-06-27T08:28:41 IST" duration-ms="3628">
     <groups>
     </groups>
-    <test started-at="2025-06-26T17:38:31 IST" name="Default test" finished-at="2025-06-26T17:38:34 IST" duration-ms="2759">
-      <class name="tests.Postmethodpositivetest">
-        <test-method signature="Negativetest()[pri:0, instance:tests.Postmethodpositivetest@43ee72e6]" started-at="2025-06-26T17:38:31 IST" name="Negativetest" finished-at="2025-06-26T17:38:33 IST" duration-ms="2270" status="PASS">
+    <test started-at="2025-06-27T08:28:37 IST" name="Default test" finished-at="2025-06-27T08:28:41 IST" duration-ms="3628">
+      <class name="tests.RAapiautomation">
+        <test-method signature="testPostApiResponsePositive()[pri:1, instance:tests.RAapiautomation@43ee72e6]" started-at="2025-06-27T08:28:37 IST" name="testPostApiResponsePositive" finished-at="2025-06-27T08:28:40 IST" duration-ms="2771" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Negativetest -->
-        <test-method signature="positivetest()[pri:0, instance:tests.Postmethodpositivetest@43ee72e6]" started-at="2025-06-26T17:38:33 IST" name="positivetest" finished-at="2025-06-26T17:38:34 IST" duration-ms="441" status="PASS">
+        </test-method> <!-- testPostApiResponsePositive -->
+        <test-method signature="testPostApiResponseNegative()[pri:2, instance:tests.RAapiautomation@43ee72e6]" started-at="2025-06-27T08:28:40 IST" name="testPostApiResponseNegative" finished-at="2025-06-27T08:28:41 IST" duration-ms="793" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- positivetest -->
-      </class> <!-- tests.Postmethodpositivetest -->
+        </test-method> <!-- testPostApiResponseNegative -->
+      </class> <!-- tests.RAapiautomation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
