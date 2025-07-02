@@ -5,7 +5,7 @@
     </listeners>
     <test name="SauceDemo Tests">
         <classes>
-            <class name="runners.TestRunner"/>
+            <class name="TestRunner.TestRunner"/>
         </classes>
     </test>
 </suite>

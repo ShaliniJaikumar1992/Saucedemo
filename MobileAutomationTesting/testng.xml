@@ -1,0 +1,7 @@
+<suite name="MobileSuite" parallel="methods" thread-count="2">
+    <test name="MobileTests">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+</suite>
