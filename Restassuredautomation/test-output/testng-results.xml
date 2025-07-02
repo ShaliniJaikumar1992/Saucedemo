@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-27T14:22:10 IST" name="Default suite" finished-at="2025-06-27T14:22:13 IST" duration-ms="3283">
+  <suite started-at="2025-07-01T20:58:45 IST" name="Default suite" finished-at="2025-07-01T20:58:48 IST" duration-ms="3543">
     <groups>
     </groups>
-    <test started-at="2025-06-27T14:22:10 IST" name="Default test" finished-at="2025-06-27T14:22:13 IST" duration-ms="3283">
+    <test started-at="2025-07-01T20:58:45 IST" name="Default test" finished-at="2025-07-01T20:58:48 IST" duration-ms="3543">
       <class name="tests.RAapiautomation">
-        <test-method signature="testPostApiResponsePositive()[pri:1, instance:tests.RAapiautomation@43ee72e6]" started-at="2025-06-27T14:22:10 IST" name="testPostApiResponsePositive" finished-at="2025-06-27T14:22:13 IST" duration-ms="2759" status="PASS">
+        <test-method signature="testPostApiResponsePositive()[pri:1, instance:tests.RAapiautomation@4313f5bc]" started-at="2025-07-01T20:58:45 IST" name="testPostApiResponsePositive" finished-at="2025-07-01T20:58:48 IST" duration-ms="3035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostApiResponsePositive -->
-        <test-method signature="testPostApiResponseNegative()[pri:2, instance:tests.RAapiautomation@43ee72e6]" started-at="2025-06-27T14:22:13 IST" name="testPostApiResponseNegative" finished-at="2025-06-27T14:22:13 IST" duration-ms="478" status="PASS">
+        <test-method signature="testPostApiResponseNegative()[pri:2, instance:tests.RAapiautomation@4313f5bc]" started-at="2025-07-01T20:58:48 IST" name="testPostApiResponseNegative" finished-at="2025-07-01T20:58:48 IST" duration-ms="447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostApiResponseNegative -->
